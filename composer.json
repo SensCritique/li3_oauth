@@ -6,10 +6,10 @@
   "authors": [],
   "minimum-stability": "dev",
   "require": {
-    "composer/installers": "dev-master"
+    "composer/installers": "1.12.0"
   },
   "require-dev": {
-    "unionofrad/lithium": "v1.1.*"
+    "unionofrad/lithium": "1.3.1"
   },
   "autoload": {
     "psr-0": {

@@ -1,42 +1,45 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "0026bf3fb8e37e14b3534472c740eeda",
-    "content-hash": "02dc72e2da7507040b6888a8255aa9d2",
+    "content-hash": "ba4fa38b1d66a792b59ca3b25ebcb918",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b840fd2500dacddf0da3e6e4726001aaf103a020"
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b840fd2500dacddf0da3e6e4726001aaf103a020",
-                "reference": "b840fd2500dacddf0da3e6e4726001aaf103a020",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -60,17 +63,23 @@
             "keywords": [
                 "Craft",
                 "Dolibarr",
+                "Eliasis",
                 "Hurad",
                 "ImageCMS",
                 "Kanboard",
+                "Lan Management System",
                 "MODX Evo",
+                "MantisBT",
                 "Mautic",
+                "Maya",
                 "OXID",
                 "Plentymarkets",
                 "Porto",
                 "RadPHP",
                 "SMF",
+                "Starbug",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -85,59 +94,96 @@
                 "croogo",
                 "dokuwiki",
                 "drupal",
+                "eZ Platform",
                 "elgg",
                 "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
+                "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
+                "lavalite",
                 "lithium",
                 "magento",
+                "majima",
                 "mako",
                 "mediawiki",
+                "miaoxing",
                 "modulework",
+                "modx",
                 "moodle",
+                "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "processwire",
                 "puppet",
+                "pxcms",
                 "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
+                "sydes",
+                "sylius",
                 "symfony",
+                "tastyigniter",
                 "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-11-23 19:56:18"
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-13T08:19:44+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "unionofrad/lithium",
-            "version": "1.1.x-dev",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UnionOfRAD/lithium.git",
-                "reference": "34492f464a9e36683b1170c1b11a5d480784d3c2"
+                "reference": "bd25d8ab9353c36a707f0535bbecadeeb9e83362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UnionOfRAD/lithium/zipball/34492f464a9e36683b1170c1b11a5d480784d3c2",
-                "reference": "34492f464a9e36683b1170c1b11a5d480784d3c2",
+                "url": "https://api.github.com/repos/UnionOfRAD/lithium/zipball/bd25d8ab9353c36a707f0535bbecadeeb9e83362",
+                "reference": "bd25d8ab9353c36a707f0535bbecadeeb9e83362",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "1.*",
-                "php": ">=5.5.14 <7.0.0 || >=7.0.3"
+                "php": "~7.4"
             },
-            "require-dev": {
-                "unionofrad/li3_fixtures": "1.1.*@dev"
+            "suggest": {
+                "ext-curl": "For the Curl Socket adapter.",
+                "ext-memcached": "For the Memcache Cache adapter.",
+                "ext-mongo": "For the MongoDb Datasource. ",
+                "ext-openssl": "For the Encrypt Session strategy.",
+                "ext-pdo": "For the MySql, Postgres and Sqlite Datasources.",
+                "ext-redis": "For the Redis Cache adapter."
             },
             "bin": [
                 "console/li3"
@@ -155,23 +201,27 @@
                     "name": "The Community"
                 }
             ],
-            "description": "The core library of the Lithium PHP framework",
+            "description": "The li₃ PHP framework",
             "homepage": "http://li3.me",
             "keywords": [
                 "framework",
                 "li3",
                 "lithium"
             ],
-            "time": "2016-11-21 15:55:43"
+            "support": {
+                "issues": "https://github.com/UnionOfRAD/lithium/issues",
+                "source": "https://github.com/UnionOfRAD/lithium/tree/v1.3.1",
+                "stack overflow": "https://stackoverflow.com/tags/li3"
+            },
+            "time": "2025-08-15T23:22:20+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "composer/installers": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
