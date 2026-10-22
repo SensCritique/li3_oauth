@@ -8,7 +8,7 @@
 
 namespace li3_oauth\models;
 
-class Consumer extends \lithium\core\StaticObject {
+class Consumer extends \lithium\core\StaticObjectDeprecated {
 
 	/**
 	 * Holds an instance of the oauth service class

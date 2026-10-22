@@ -10,7 +10,7 @@ namespace li3_oauth\models;
 
 use \li3_oauth\extensions\service\OAuth;
 
-class Provider extends \lithium\core\StaticObject {
+class Provider extends \lithium\core\StaticObjectDeprecated {
 
 	/**
 	 * Holds an instance of the oauth service class

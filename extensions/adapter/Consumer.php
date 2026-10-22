@@ -7,7 +7,7 @@ use \lithium\storage\Session;
 
 use Exception;
 
-abstract class Consumer extends \lithium\core\Object {
+abstract class Consumer extends \lithium\core\ObjectDeprecated {
 
 	const SESSION_PREFIX = 'li3_oauth';
 
